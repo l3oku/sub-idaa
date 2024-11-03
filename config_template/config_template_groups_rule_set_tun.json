@@ -107,6 +107,7 @@
         "TaiWan",
         "Singapore",
         "Japan",
+        "Korea",
         "America",
         "Others"
       ],
@@ -119,6 +120,7 @@
         "TaiWan",
         "Singapore",
         "Japan",
+        "Korea",
         "America",
         "Others"
       ],
@@ -132,6 +134,7 @@
         "TaiWan",
         "Singapore",
         "Japan",
+        "Korea",
         "America",
         "Others"
       ]
@@ -144,6 +147,7 @@
         "TaiWan",
         "Singapore",
         "Japan",
+        "Korea",
         "America",
         "Others"
       ]
@@ -156,6 +160,7 @@
         "TaiWan",
         "Singapore",
         "Japan",
+        "Korea",
         "America",
         "Others"
       ]
@@ -168,6 +173,7 @@
         "TaiWan",
         "Singapore",
         "Japan",
+        "Korea",
         "America",
         "Others"
       ]
@@ -197,6 +203,7 @@
         "TaiWan",
         "Singapore",
         "Japan",
+        "Korea",
         "America",
         "Others"
       ],
@@ -210,6 +217,7 @@
         "TaiWan",
         "Singapore",
         "Japan",
+        "Korea",
         "America"
       ],
       "default": "Japan"
@@ -222,6 +230,7 @@
         "TaiWan",
         "Singapore",
         "Japan",
+        "Korea",
         "America",
         "Others"
       ]
@@ -234,6 +243,7 @@
         "TaiWan",
         "Singapore",
         "Japan",
+        "Korea",
         "America",
         "Others"
       ]
@@ -247,6 +257,7 @@
         "TaiWan",
         "Singapore",
         "Japan",
+        "Korea",
         "America",
         "Others"
       ]
@@ -260,6 +271,7 @@
         "TaiWan",
         "Singapore",
         "Japan",
+        "Korea",
         "America",
         "Others"
       ]
@@ -273,6 +285,7 @@
         "TaiWan",
         "Singapore",
         "Japan",
+        "Korea",
         "America",
         "Others"
       ]
@@ -285,6 +298,7 @@
         "TaiWan",
         "Singapore",
         "Japan",
+        "Korea",
         "America",
         "Others"
       ]
@@ -297,6 +311,7 @@
         "TaiWan",
         "Singapore",
         "Japan",
+        "Korea",
         "America",
         "Others",
         "direct"
@@ -358,12 +373,6 @@
         {"action":"include","keywords":["🇯🇵|JP|jp|日本|日|Japan"]}
       ]
     },
-    {
-      "tag":"America",
-      "type":"selector",
-      "outbounds":[
-        "{all}"
-      ],
     {
       "tag":"Korea",
       "type":"selector",
