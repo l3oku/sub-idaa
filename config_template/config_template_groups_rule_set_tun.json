@@ -528,7 +528,7 @@
         "outbound": "Microsoft"
       },
       {
-        "rule_set": ["geosite-category-games", "geosite-dmm"],
+        "rule_set": ["geosite-category-games", "geosite-dmm", "geosite-steam"],
         "outbound": "Games"
       },
       {
@@ -718,6 +718,13 @@
         "type": "remote",
         "format": "binary",
         "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/dmm.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geosite-steam",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/sing/geo/geosite/steam.srs",
         "download_detour": "direct"
       },
       {
