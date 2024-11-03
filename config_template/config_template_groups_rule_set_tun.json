@@ -364,6 +364,22 @@
       "outbounds":[
         "{all}"
       ],
+    {
+      "tag":"Korea",
+      "type":"selector",
+      "outbounds":[
+        "{all}"
+      ],
+      "filter":[
+        {"action":"include","keywords":["🇰🇷|KR|kr|韩国|韩|Korea"]}
+      ]
+    },
+    {
+      "tag":"America",
+      "type":"selector",
+      "outbounds":[
+        "{all}"
+      ],
       "filter":[
         {"action":"include","keywords":["🇺🇸|US|us|美国|美|United States"]}
       ]
