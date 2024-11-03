@@ -101,6 +101,18 @@
       ]
     },
     {
+      "tag":"Youtube",
+      "type":"selector",
+      "outbounds":[
+        "TaiWan",
+        "Singapore",
+        "Japan",
+        "America",
+        "Others"
+      ],
+      "default": "America"
+    },
+    {
       "tag":"OpenAI",
       "type":"selector",
       "outbounds":[
