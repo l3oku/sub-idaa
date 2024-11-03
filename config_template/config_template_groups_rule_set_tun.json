@@ -476,7 +476,11 @@
         "outbound": "OpenAI"
       },
       {
-        "rule_set": ["geosite-youtube", "geoip-google", "geosite-google", "geosite-github"],
+        "rule_set": ["geosite-youtube"],
+        "outbound": "Youtube"
+      },
+      {
+        "rule_set": ["geoip-google", "geosite-google", "geosite-github"],
         "outbound": "Google"
       },
       {
