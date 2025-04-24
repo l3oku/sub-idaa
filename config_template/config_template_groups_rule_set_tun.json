@@ -1,3 +1,4 @@
+```json
 {
   "log": {"level": "info", "timestamp": true},
   "experimental": {
@@ -32,7 +33,7 @@
   ],
   "outbounds": [
     {"tag": "direct", "type": "direct"},
-        {"tag": "Proxy", "type": "selector", "outbounds": ["{all}"]},
+    {"tag": "Proxy", "type": "selector", "outbounds": ["{all}"]},
     {"tag": "Telegram", "type": "selector", "outbounds": ["Proxy","HongKong","TaiWan","Singapore","Japan","Korea","America","Others"]},
     {"tag": "Spotify", "type": "selector", "outbounds": ["HongKong","TaiWan","Singapore","Japan","Korea","America","Proxy","Others"], "default": "HongKong"},
     {"tag": "Tiktok", "type": "selector", "outbounds": ["Proxy","HongKong","TaiWan","Singapore","Japan","Korea","America"], "default": "Japan"},
@@ -50,7 +51,7 @@
     {"tag": "Korea", "type": "selector", "outbounds": ["{all}","direct"], "filter":[{"action":"include","keywords":["^.*\\.(kr|韩国)$","🇰🇷","KR","kr","Korea","South\\s?Korea"]}]},
     {"tag": "America", "type": "selector", "outbounds": ["{all}"], "filter":[{"action":"include","keywords":["^.*\\.(us|美国)$","🇺🇸","US","us","United\\s?States"]}]},
     {"tag": "Others", "type": "selector", "outbounds": ["{all}"], "filter":[{"action":"exclude","keywords":["HK","hk","香港","TW","tw","台湾","SG","sg","新加坡","JP","jp","日本","US","us","美国"]}]},
-    {"tag": "auto", "type": "urltest", "outbounds": ["HongKong","TaiWan","Singapore","Japan","Korea","America","Others"], "filter":[{"action":"include","keywords":["^.*\\.(cn|hk|tw|sg|jp|kr|us)$"]}], "url": "http://www.gstatic.com/generate_204", "interval": "10m", "tolerance": 50}
+    {"tag": "global", "type": "urltest", "outbounds": ["{all}"], "filter":[{"action":"include","keywords":["^.*\.(cn|hk|tw|sg|jp|kr|us)$"]}], "url": "http://www.gstatic.com/generate_204", "interval": "10m", "tolerance": 50}
   ],
   "route": {
     "auto_detect_interface": true,
@@ -92,29 +93,5 @@
       {"tag":"geosite-github","type":"remote","format":"binary","url":"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/github.srs","download_detour":"direct"},
       {"tag":"geoip-telegram","type":"remote","format":"binary","url":"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/telegram.srs","download_detour":"direct"},
       {"tag":"geosite-telegram","type":"remote","format":"binary","url":"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/telegram.srs","download_detour":"direct"},
-      {"tag":"geoip-twitter","type":"remote","format":"binary","url":"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/twitter.srs","download_detour":"direct"},
-      {"tag":"geosite-twitter","type":"remote","format":"binary","url":"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/twitter.srs","download_detour":"direct"},
-      {"tag":"geoip-facebook","type":"remote","format":"binary","url":"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/facebook.srs","download_detour":"direct"},
-      {"tag":"geosite-facebook","type":"remote","format":"binary","url":"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/facebook.srs","download_detour":"direct"},
-      {"tag":"geosite-bilibili","type":"remote","format":"binary","url":"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/bilibili.srs","download_detour":"direct"},
-      {"tag":"geosite-bahamut","type":"remote","format":"binary","url":"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/bahamut.srs","download_detour":"direct"},
-      {"tag":"geosite-spotify","type":"remote","format":"binary","url":"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/spotify.srs","download_detour":"direct"},
-      {"tag":"geosite-tiktok","type":"remote","format":"binary","url":"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/tiktok.srs","download_detour":"direct"},
-      {"tag":"geoip-netflix","type":"remote","format":"binary","url":"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/netflix.srs","download_detour":"direct"},
-      {"tag":"geosite-netflix","type":"remote","format":"binary","url":"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/netflix.srs","download_detour":"direct"},
-      {"tag":"geosite-disney","type":"remote","format":"binary","url":"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/disney.srs","download_detour":"direct"},
-      {"tag":"geoip-apple","type":"remote","format":"binary","url":"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/geoip/apple.srs","download_detour":"direct"},
-      {"tag":"geosite-apple","type":"remote","format":"binary","url":"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/apple.srs","download_detour":"direct"},
-      {"tag":"geosite-amazon","type":"remote","format":"binary","url":"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/amazon.srs","download_detour":"direct"},
-      {"tag":"geosite-microsoft","type":"remote","format":"binary","url":"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/microsoft.srs","download_detour":"direct"},
-      {"tag":"geosite-category-games","type":"remote","format":"binary","url":"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-games.srs","download_detour":"direct"},
-      {"tag":"geosite-dmm","type":"remote","format":"binary","url":"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/dmm.srs","download_detour":"direct"},
-      {"tag":"geosite-steam","type":"remote","format":"binary","url":"https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/sing/geo/geosite/steam.srs","download_detour":"direct"},
-      {"tag":"geosite-hbo","type":"remote","format":"binary","url":"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/hbo.srs","download_detour":"direct"},
-      {"tag":"geosite-primevideo","type":"remote","format":"binary","url":"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/primevideo.srs","download_detour":"direct"},
-      {"tag":"geosite-geolocation-!cn","type":"remote","format":"binary","url":"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/geolocation-!cn.srs","download_detour":"direct"},
-      {"tag":"geoip-cn","type":"remote","format":"binary","url":"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs","download_detour":"direct"},
-      {"tag":"geosite-cn","type":"remote","format":"binary","url":"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs","download_detour":"direct"}
-    ]
-  }
-}
+      {"tag":"geoip-twitter","type":"remote","format":"binary","url":"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/twitter.srs","download_detour":"direct```
+
