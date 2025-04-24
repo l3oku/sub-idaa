@@ -86,7 +86,7 @@
       "tag": "Proxy",
       "type": "selector",
       "outbounds": [
-        "direct",
+        "direct",  // 如果要使用 direct 作为备选，请确保它已正确定义
         "Proxy",
         "{all}"
       ]
