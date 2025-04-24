@@ -191,12 +191,6 @@
       "outbounds": [
         "{all}",
         "direct"
-      ],
-      "filter": [
-        {
-          "action": "include",
-          "keywords": ["🇭🇰|HK|hk|香港|港|HongKong|Hong Kong"]
-        }
       ]
     },
     {
@@ -205,12 +199,6 @@
       "outbounds": [
         "{all}",
         "direct"
-      ],
-      "filter": [
-        {
-          "action": "include",
-          "keywords": ["🇹🇼|TW|tw|台湾|臺灣|台|Taiwan"]
-        }
       ]
     },
     {
@@ -218,12 +206,6 @@
       "type": "selector",
       "outbounds": [
         "{all}"
-      ],
-      "filter": [
-        {
-          "action": "include",
-          "keywords": ["🇸🇬|SG|sg|新加坡|狮|Singapore"]
-        }
       ]
     },
     {
@@ -231,12 +213,6 @@
       "type": "selector",
       "outbounds": [
         "{all}"
-      ],
-      "filter": [
-        {
-          "action": "include",
-          "keywords": ["🇯🇵|JP|jp|日本|日|Japan"]
-        }
       ]
     },
     {
@@ -245,12 +221,6 @@
       "outbounds": [
         "{all}",
         "direct"
-      ],
-      "filter": [
-        {
-          "action": "include",
-          "keywords": ["🇰🇷|KR|kr|韩国|韩|Korea|South Korea"]
-        }
       ]
     },
     {
@@ -258,12 +228,6 @@
       "type": "selector",
       "outbounds": [
         "{all}"
-      ],
-      "filter": [
-        {
-          "action": "include",
-          "keywords": ["🇺🇸|US|us|美国|美|United States"]
-        }
       ]
     },
     {
@@ -272,12 +236,6 @@
       "outbounds": [
         "{all}"
       ]
-    }
-  ],
-  "filter": [
-    {
-      "action": "exclude",
-      "keywords": ["🇭🇰|HK|hk|香港|香|🇹🇼|TW|tw|台湾|台|🇸🇬|SG|sg|新加坡|狮|🇯🇵|JP|jp|日本|日|🇺🇸|US|us|美国|美"]
     }
   ],
   "route": {
@@ -403,22 +361,6 @@
       {
         "rule_set": ["geoip-cn", "geosite-cn"],
         "outbound": "China"
-      }
-    ],
-    "rule_set": [
-      {
-        "tag": "geosite-category-ads-all",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ads-all.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geosite-openai",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/Toperlock/sing-box-geosite@main/rule/OpenAI.srs",
-        "download_detour": "direct"
       }
     ]
   }
