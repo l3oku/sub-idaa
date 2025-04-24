@@ -146,15 +146,23 @@
       "default": "Proxy",
       "interrupt_exist_connections": true
     },
+
     {
       "tag": "🇭🇰 HongKong",
+      "type": "selector",
+      "outbounds": ["HK-Node-1","HK-Node-2"],
+      "default": "HK-Node-1"
+    },
+    {
+      "tag": "HK-health",
       "type": "urltest",
-      "outbounds": ["Proxy"],
+      "outbounds": ["🇭🇰 HongKong"],
       "url": "http://1.1.1.1/generate_204",
       "interval": "10m",
       "tolerance": 0,
       "interrupt_exist_connections": false
     },
+
     {
       "tag": "🇺🇸 United States",
       "type": "urltest",
