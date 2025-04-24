@@ -95,6 +95,7 @@
       "tag": "Youtube",
       "type": "selector",
       "outbounds": [
+        "Proxy",
         "TaiWan",
         "Singapore",
         "Japan",
@@ -108,6 +109,7 @@
       "tag": "OpenAI",
       "type": "selector",
       "outbounds": [
+        "Proxy",
         "TaiWan",
         "Singapore",
         "Japan",
@@ -121,6 +123,7 @@
       "tag": "Google",
       "type": "selector",
       "outbounds": [
+        "Proxy",
         "HongKong",
         "TaiWan",
         "Singapore",
@@ -134,6 +137,7 @@
       "tag": "Telegram",
       "type": "selector",
       "outbounds": [
+        "Proxy",
         "HongKong",
         "TaiWan",
         "Singapore",
@@ -147,6 +151,7 @@
       "tag": "Twitter",
       "type": "selector",
       "outbounds": [
+        "Proxy",
         "HongKong",
         "TaiWan",
         "Singapore",
@@ -160,6 +165,7 @@
       "tag": "Facebook",
       "type": "selector",
       "outbounds": [
+        "Proxy",
         "HongKong",
         "TaiWan",
         "Singapore",
@@ -174,6 +180,7 @@
       "type": "selector",
       "outbounds": [
         "direct",
+        "Proxy",
         "HongKong",
         "TaiWan"
       ]
@@ -196,6 +203,7 @@
         "Japan",
         "Korea",
         "America",
+        "Proxy",
         "Others"
       ],
       "default": "Japan"
@@ -204,6 +212,7 @@
       "tag": "TikTok",
       "type": "selector",
       "outbounds": [
+        "Proxy",
         "HongKong",
         "TaiWan",
         "Singapore",
@@ -217,6 +226,7 @@
       "tag": "Netflix",
       "type": "selector",
       "outbounds": [
+        "Proxy",
         "HongKong",
         "TaiWan",
         "Singapore",
@@ -230,6 +240,7 @@
       "tag": "Disney+",
       "type": "selector",
       "outbounds": [
+        "Proxy",
         "HongKong",
         "TaiWan",
         "Singapore",
@@ -244,6 +255,7 @@
       "type": "selector",
       "outbounds": [
         "direct",
+        "Proxy",
         "HongKong",
         "TaiWan",
         "Singapore",
@@ -272,6 +284,7 @@
       "type": "selector",
       "outbounds": [
         "direct",
+        "Proxy",
         "HongKong",
         "TaiWan",
         "Singapore",
@@ -291,6 +304,7 @@
         "Japan",
         "Korea",
         "America",
+        "Proxy",
         "Others"
       ]
     },
@@ -304,6 +318,7 @@
         "Japan",
         "Korea",
         "America",
+        "Proxy",
         "Others",
         "direct"
       ]
