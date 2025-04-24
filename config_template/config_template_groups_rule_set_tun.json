@@ -302,7 +302,7 @@
       "type": "direct",
       "tag": "direct"
     }
-  ],
+      ],
   "route": {
     "auto_detect_interface": true,
     "final": "Proxy",
