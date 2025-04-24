@@ -32,7 +32,7 @@
   ],
   "outbounds": [
     {"tag": "direct", "type": "direct"},
-    {"tag": "Proxy", "type": "selector", "outbounds": ["direct", "{all}"]},
+        {"tag": "Proxy", "type": "selector", "outbounds": ["{all}"]},
     {"tag": "Telegram", "type": "selector", "outbounds": ["Proxy","HongKong","TaiWan","Singapore","Japan","Korea","America","Others"]},
     {"tag": "Spotify", "type": "selector", "outbounds": ["HongKong","TaiWan","Singapore","Japan","Korea","America","Proxy","Others"], "default": "HongKong"},
     {"tag": "Tiktok", "type": "selector", "outbounds": ["Proxy","HongKong","TaiWan","Singapore","Japan","Korea","America"], "default": "Japan"},
