@@ -358,7 +358,7 @@
         "tag": "geoip-google",
         "type": "remote",
         "format": "binary",
-        "url      "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/google.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/google.srs",
         "download_detour": "direct"
       },
       {
