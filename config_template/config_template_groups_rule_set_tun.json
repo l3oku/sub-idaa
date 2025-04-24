@@ -33,24 +33,23 @@
   "outbounds": [
     {"tag": "direct", "type": "direct"},
         {"tag": "Proxy", "type": "selector", "outbounds": ["{all}"]},
-    {"tag": "Telegram", "type": "selector", "outbounds": ["Proxy","HongKong","TaiWan","Singapore","Japan","Korea","America","Others"]},
-    {"tag": "Spotify", "type": "selector", "outbounds": ["HongKong","TaiWan","Singapore","Japan","Korea","America","Proxy","Others"], "default": "HongKong"},
+    {"tag": "Telegram", "type": "selector", "outbounds": ["Proxy","HongKong","TaiWan","Singapore","Japan","Korea","America","Global"]},
+    {"tag": "Spotify", "type": "selector", "outbounds": ["HongKong","TaiWan","Singapore","Japan","Korea","America","Proxy","Global"], "default": "HongKong"},
     {"tag": "Tiktok", "type": "selector", "outbounds": ["Proxy","HongKong","TaiWan","Singapore","Japan","Korea","America"], "default": "Japan"},
-    {"tag": "Youtube", "type": "selector", "outbounds": ["Proxy","direct"]},
-    {"tag": "Twitter", "type": "selector", "outbounds": ["Proxy","direct"]},
-    {"tag": "Facebook", "type": "selector", "outbounds": ["Proxy","direct"]},
-    {"tag": "Chatgpt", "type": "selector", "outbounds": ["Proxy","HongKong","TaiWan","Singapore","Japan","Korea","America","Others"], "default": "America"},
-    {"tag": "Meta", "type": "selector", "outbounds": ["Proxy","HongKong","TaiWan","Singapore","Japan","Korea","America","Others"]},
-    {"tag": "Google", "type": "selector", "outbounds": ["Proxy","HongKong","TaiWan","Singapore","Japan","Korea","America","Others"]},
+    {"tag": "Youtube", "type": "selector", "outbounds": ["HongKong","TaiWan","Singapore","Japan","Korea","America","Proxy","Global"], "default": "Proxy"},
+    {"tag": "Twitter", "type": "selector", "outbounds": ["HongKong","TaiWan","Singapore","Japan","Korea","America","Proxy","Global"], "default": "Proxy"},
+    {"tag": "Facebook", "type": "selector", "outbounds": ["HongKong","TaiWan","Singapore","Japan","Korea","America","Proxy","Global"], "default": "Proxy"},
+    {"tag": "Chatgpt", "type": "selector", "outbounds": ["Proxy","HongKong","TaiWan","Singapore","Japan","Korea","America","Global"], "default": "America"},
+    {"tag": "Meta", "type": "selector", "outbounds": ["Proxy","HongKong","TaiWan","Singapore","Japan","Korea","America","Global"]},
+    {"tag": "Google", "type": "selector", "outbounds": ["Proxy","HongKong","TaiWan","Singapore","Japan","Korea","America","Global"]},
     {"tag": "China", "type": "selector", "outbounds": ["direct","Proxy"]},
-    {"tag": "HongKong", "type": "selector", "outbounds": ["{all}","direct"], "filter":[{"action":"include","keywords":["^.*\\.(hk|香港|港)$","🇭🇰","HK","hk","HongKong","Hong\\s?Kong"]}]},
-    {"tag": "TaiWan", "type": "selector", "outbounds": ["{all}","direct"], "filter":[{"action":"include","keywords":["^.*\\.(tw|台湾|臺灣|台)$","🇹🇼","TW","tw","Taiwan"]}]},
-    {"tag": "Singapore", "type": "selector", "outbounds": ["{all}"], "filter":[{"action":"include","keywords":["^.*\\.(sg|新加坡|狮城)$","🇸🇬","SG","sg","Singapore"]}]},
-    {"tag": "Japan", "type": "selector", "outbounds": ["{all}"], "filter":[{"action":"include","keywords":["^.*\\.(jp|日本)$","🇯🇵","JP","jp","Japan"]}]},
-    {"tag": "Korea", "type": "selector", "outbounds": ["{all}","direct"], "filter":[{"action":"include","keywords":["^.*\\.(kr|韩国)$","🇰🇷","KR","kr","Korea","South\\s?Korea"]}]},
+    {"tag": "HongKong", "type": "selector", "outbounds": ["{all}","direct"], "filter":[{"action":"include","keywords":["^.*\\.(hk|香港|港)$","🇭🇰","HK","hk","HongKong","Hong\\s?Kong"]}]}, "url": "http://www.gstatic.com/generate_204", "interval": "10m", "tolerance": 50}
+    {"tag": "TaiWan", "type": "selector", "outbounds": ["{all}","direct"], "filter":[{"action":"include","keywords":["^.*\\.(tw|台湾|臺灣|台)$","🇹🇼","TW","tw","Taiwan"]}]}, "url": "http://www.gstatic.com/generate_204", "interval": "10m", "tolerance": 50}
+    {"tag": "Singapore", "type": "selector", "outbounds": ["{all}"], "filter":[{"action":"include","keywords":["^.*\\.(sg|新加坡|狮城)$","🇸🇬","SG","sg","Singapore"]}]}, "url": "http://www.gstatic.com/generate_204", "interval": "10m", "tolerance": 50}
+    {"tag": "Japan", "type": "selector", "outbounds": ["{all}"], "filter":[{"action":"include","keywords":["^.*\\.(jp|日本)$","🇯🇵","JP","jp","Japan"]}]}, "url": "http://www.gstatic.com/generate_204", "interval": "10m", "tolerance": 50}
+    {"tag": "Korea", "type": "selector", "outbounds": ["{all}","direct"], "filter":[{"action":"include","keywords":["^.*\\.(kr|韩国)$","🇰🇷","KR","kr","Korea","South\\s?Korea"]}]}, "url": "http://www.gstatic.com/generate_204", "interval": "10m", "tolerance": 50}
     {"tag": "America", "type": "selector", "outbounds": ["{all}"], "filter":[{"action":"include","keywords":["^.*\\.(us|美国)$","🇺🇸","US","us","United\\s?States"]}]},
-    {"tag": "Others", "type": "selector", "outbounds": ["{all}"], "filter":[{"action":"exclude","keywords":["HK","hk","香港","TW","tw","台湾","SG","sg","新加坡","JP","jp","日本","US","us","美国"]}]},
-    {"tag": "Global", "type": "urltest", "outbounds": ["{all}"], "filter":[{"action":"include","keywords":["HK","hk","香港","TW","tw","台湾","SG","sg","新加坡","JP","jp","日本","US","us","美国"]}], "url": "http://www.gstatic.com/generate_204", "interval": "10m", "tolerance": 50}
+    {"tag": "Global", "type": "urltest", "outbounds": ["{all}"], "url": "http://www.gstatic.com/generate_204", "interval": "10m", "tolerance": 50}
   ],
   "route": {
     "auto_detect_interface": true,
