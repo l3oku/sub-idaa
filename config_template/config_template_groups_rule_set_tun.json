@@ -1,32 +1,32 @@
 {
-  // 日志配置：设置日志级别和时间戳
+  # 日志配置：设置日志级别和时间戳
   "log": {
-    "level": "info",       // 日志级别：输出 info、warn、error 等级别
-    "timestamp": true        // 是否在日志中添加时间戳
+    "level": "info",       # 日志级别：输出 info、warn、error 等级别
+    "timestamp": true        # 是否在日志中添加时间戳
   },
 
-  // 实验性功能：缓存与 Clash API 静态资源管理
+  # 实验性功能：缓存与 Clash API 静态资源管理
   "experimental": {
-    // 本地缓存配置
+    # 本地缓存配置
     "cache_file": {
-      "enabled": true,       // 启用缓存文件
-      "store_fakeip": false  // 不缓存伪造 IP（污染解析）
+      "enabled": true,       # 启用缓存文件
+      "store_fakeip": false  # 不缓存伪造 IP（污染解析）
     },
-    // Clash API 接口配置
+    # Clash API 接口配置
     "clash_api": {
-      "external_controller": "127.0.0.1:9090",  // API 控制监听地址
-      "external_ui": "ui",                      // 本地 UI 静态资源目录
-      "secret": "",                             // API 访问密钥，留空无需验证
-      "external_ui_download_url": "https://gh-proxy.com/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",  // UI 资源下载地址
-      "external_ui_download_detour": "direct", // 下载时不走代理
-      "default_mode": "rule"                   // 默认模式：rule（规则模式）
+      "external_controller": "127.0.0.1:9090",  # API 控制监听地址
+      "external_ui": "ui",                      # 本地 UI 静态资源目录
+      "secret": "",                             # API 访问密钥，留空无需验证
+      "external_ui_download_url": "https://gh-proxy.com/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",  # UI 资源下载地址
+      "external_ui_download_detour": "direct", # 下载时不走代理
+      "default_mode": "rule"                   # 默认模式：rule（规则模式）
     }
   },
 
-  // DNS 配置：定义上游服务器、转发规则与解析策略
+  # DNS 配置：定义上游服务器、转发规则与解析策略
   "dns": {
-    "strategy": "ipv4_only",  // 仅解析 IPv4 A 记录
-    "final": "localDns",       // 默认上游服务器标签
+    "strategy": "ipv4_only",  # 仅解析 IPv4 A 记录
+    "final": "localDns",       # 默认上游服务器标签
     "servers": [
       { "tag": "proxyDns", "address": "tls://8.8.8.8", "detour": "Proxy" },  // DoT -> 走代理
       { "tag": "localDns", "address": "https://223.5.5.5/dns-query", "detour": "direct" }  // DoH -> 直连
@@ -40,7 +40,7 @@
     ]
   },
 
-  // 入站配置：TUN 设备接管与多协议监听
+  # 入站配置：TUN 设备接管与多协议监听
   "inbounds": [
     {
       "tag": "tun-in",
@@ -54,7 +54,7 @@
         "http_proxy": {
           "enabled": true,
           "server": "127.0.0.1",
-          "server_port": 2080  // HTTP 请求重定向到本地 2080
+          "server_port": 2080  # HTTP 请求重定向到本地 2080
         }
       }
     },
@@ -62,11 +62,11 @@
       "tag": "mixed-in",
       "type": "mixed",
       "listen": "127.0.0.1",
-      "listen_port": 2080  // 支持 HTTP/SOCKS/TCP 等多协议
+      "listen_port": 2080  # 支持 HTTP/SOCKS/TCP 等多协议
     }
   ],
 
-  // 出站配置：selector 多路选择、urltest 测速与 direct 直连
+  # 出站配置：selector 多路选择、urltest 测速与 direct 直连
   "outbounds": [
     { "tag": "Proxy",   "type": "selector", "outbounds": ["auto","direct","{all}"] },
     { "tag": "OpenAI",  "type": "selector", "outbounds": ["TaiWan","Singapore","Japan","America","Others"], "default": "America" },
@@ -118,7 +118,7 @@
     { "tag": "direct","type": "direct" }
   ],
 
-  // 路由配置：嗅探、DNS 劫持、广告拦截、服务分流与默认出口
+  # 路由配置：嗅探、DNS 劫持、广告拦截、服务分流与默认出口
   "route": {
     "auto_detect_interface": true,
     "final": "Proxy",
@@ -149,7 +149,7 @@
       { "rule_set":"geosite-geolocation-!cn",                                 "outbound":"Global" },
       { "rule_set":["geoip-cn","geosite-cn"],                               "outbound":"China" }
     ],
-    // 规则集远程下载配置
+    # 规则集远程下载配置
     "rule_set": [
       { "tag":"geosite-category-ads-all","type":"remote","format":"binary","url":"https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ads-all.srs","download_detour":"direct" },
       { "tag":"geosite-openai","type":"remote","format":"binary","url":"https://testingcf.jsdelivr.net/gh/Toperlock/sing-box-geosite@main/rule/OpenAI.srs","download_detour":"direct" },
