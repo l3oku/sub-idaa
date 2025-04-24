@@ -362,8 +362,7 @@
         "rule_set": ["geoip-cn", "geosite-cn"],
         "outbound": "China"
       }
-    ]
-  },
+    ],
   "rule_set": [
     {
       "tag": "geosite-category-ads-all",
