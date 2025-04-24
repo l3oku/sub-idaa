@@ -50,7 +50,7 @@
     {"tag": "Korea", "type": "selector", "outbounds": ["{all}","direct"], "filter":[{"action":"include","keywords":["^.*\\.(kr|韩国)$","🇰🇷","KR","kr","Korea","South\\s?Korea"]}]},
     {"tag": "America", "type": "selector", "outbounds": ["{all}"], "filter":[{"action":"include","keywords":["^.*\\.(us|美国)$","🇺🇸","US","us","United\\s?States"]}]},
     {"tag": "Others", "type": "selector", "outbounds": ["{all}"], "filter":[{"action":"exclude","keywords":["HK","hk","香港","TW","tw","台湾","SG","sg","新加坡","JP","jp","日本","US","us","美国"]}]},
-    {"tag": "Global", "type": "urltest", "outbounds": ["{all}"], "filter":[{"action":"include","keywords":["^.*\\.(cn|hk|tw|sg|jp|kr|us)$"]}], "url": "http://www.gstatic.com/generate_204", "interval": "10m", "tolerance": 50}
+    {"tag": "Global", "type": "urltest", "outbounds": ["{all}"], "filter":[{"action":"include","keywords":[^.*\.[A-Za-z]{2,63}$], "url": "http://www.gstatic.com/generate_204", "interval": "10m", "tolerance": 50}
   ],
   "route": {
     "auto_detect_interface": true,
