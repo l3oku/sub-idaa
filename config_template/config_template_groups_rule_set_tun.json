@@ -83,114 +83,118 @@
   ],
   "outbounds": [
     {
-      "tag": "direct",
-      "type": "direct"
-    },
-    {
-      "tag": "Proxy",
+      "tag": "HongKong",
       "type": "selector",
       "outbounds": [
-        "direct",
-        "{all}"
-      ]
-    },
-    {
-      "tag": "HongKong",
-      "type": "urltest",
-      "url": "http://www.gstatic.com/generate_204",
-      "interval": "600",
-      "tolerance": 50,
-      "outbounds": ["{all}", "direct"],
+        "{all}",
+        "direct"
+      ],
       "filter": [
         {
           "action": "include",
-          "keywords": ["🇭🇰|HK|hk|香港|Hong Kong"]
+          "keywords": ["🇭🇰|HK|hk|香港|港|HongKong|Hong Kong"]
         }
       ]
     },
     {
       "tag": "TaiWan",
-      "type": "urltest",
-      "url": "http://www.gstatic.com/generate_204",
-      "interval": "600",
-      "tolerance": 50,
-      "outbounds": ["{all}", "direct"],
+      "type": "selector",
+      "outbounds": [
+        "{all}",
+        "direct"
+      ],
       "filter": [
         {
           "action": "include",
-          "keywords": ["🇹🇼|TW|tw|台湾|臺灣|台|Taiwan"]
+          "keywords": ["🇹🇼|TW|tw|台湾| Taiwanese|台|Taiwan"]
         }
       ]
     },
     {
       "tag": "Singapore",
-      "type": "urltest",
-      "url": "http://www.gstatic.com/generate_204",
-      "interval": "600",
-      "tolerance": 50,
-      "outbounds": ["{all}"],
+      "type": "selector",
+      "outbounds": [
+        "{all}"
+      ],
       "filter": [
         {
           "action": "include",
-          "keywords": ["🇸🇬|SG|sg|新加坡|Singapura"]
+          "keywords": ["🇸🇬|SG|sg|新加坡|狮|Singapore"]
         }
       ]
     },
     {
       "tag": "Japan",
-      "type": "urltest",
-      "url": "http://www.gstatic.com/generate_204",
-      "interval": "600",
-      "tolerance": 50,
-      "outbounds": ["{all}"],
+      "type": "selector",
+      "outbounds": [
+        "{all}"
+      ],
       "filter": [
         {
           "action": "include",
-          "keywords": ["🇯🇵|JP|jp|日本|Nihon"]
+          "keywords": ["🇯🇵|JP|jp|日本|日|Japan"]
         }
       ]
     },
     {
       "tag": "Korea",
-      "type": "urltest",
-      "url": "http://www.gstatic.com/generate_204",
-      "interval": "600",
-      "tolerance": 50,
-      "outbounds": ["{all}", "direct"],
+      "type": "selector",
+      "outbounds": [
+        "{all}",
+        "direct"
+      ],
       "filter": [
         {
           "action": "include",
-          "keywords": ["🇰🇷|KR|kr|韩国|대한민국"]
+          "keywords": ["🇰🇷|KR|kr|韩国|韩|Korea|South Korea"]
         }
       ]
     },
     {
       "tag": "America",
-      "type": "urltest",
-      "url": "http://www.gstatic.com/generate_204",
-      "interval": "600",
-      "tolerance": 50,
-      "outbounds": ["{all}"],
+      "type": "selector",
+      "outbounds": [
+        "{all}"
+      ],
       "filter": [
         {
           "action": "include",
-          "keywords": ["🇺🇸|US|us|美国|USA"]
+          "keywords": ["🇺🇸|US|us|美国|美|United States"]
         }
       ]
     },
     {
       "tag": "Others",
-      "type": "urltest",
-      "url": "http://www.gstatic.com/generate_204",
-      "interval": "600",
-      "tolerance": 50,
-      "outbounds": ["{all}"],
+      "type": "selector",
+      "outbounds": [
+        "{all}"
+      ],
       "filter": [
         {
           "action": "exclude",
-          "keywords": ["🇨🇳|CN|cn|中国|Zhōngguó", "🇭🇰|HK|hk|香港|Hong Kong", "🇹🇼|TW|tw|台湾|UIApplicationDelegate|台|Taiwan", "🇸🇬|SG|sg|新加坡|Singapura", "🇯🇵|JP|jp|日本|Nihon", "🇰🇷|KR|kr|韩国|대한민국", "🇺🇸|US|us|美国|USA"]
+          "keywords": ["🇭🇰|HK|hk|香港|香|🇹🇼|TW|tw|台湾|台|🇸🇬|SG|sg|新加坡|狮|🇯🇵|JP|jp|日本|日|🇺🇸|US|us|美国|美"]
         }
       ]
+    },
+    {
+      "tag": "auto",
+      "type": "urltest",
+      "outbounds": [
+        "{all}"
+      ],
+      "filter": [
+        {
+          "action": "exclude",
+          "keywords": ["网站|地址|剩余|过期|时间|有效"]
+        }
+      ],
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": "10m",
+      "tolerance": 50
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
     }
   ],
   "route": {
