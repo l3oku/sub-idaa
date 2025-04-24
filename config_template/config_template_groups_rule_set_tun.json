@@ -22,24 +22,12 @@
       {
         "tag": "proxyDns",
         "address": "tls://8.8.8.8",
-        "detour": "Proxy",
-        "type": "tls"
+        "detour": "Proxy"
       },
       {
         "tag": "localDns",
         "address": "https://223.5.5.5/dns-query",
-        "detour": "direct",
-        "type": "https"
-      }
-    ],
-    "domain_resolvers": [
-      {
-        "tag": "proxyDns",
-        "address": "tls://8.8.8.8"
-      },
-      {
-        "tag": "localDns",
-        "address": "https://223.5.5.5/dns-query"
+        "detour": "direct"
       }
     ],
     "rules": [
@@ -388,7 +376,8 @@
       "filter": [
         {
           "action": "exclude",
-          "keywords": []
+          "keywords": [
+          ]
         }
       ],
       "url": "http://www.gstatic.com/generate_204",
