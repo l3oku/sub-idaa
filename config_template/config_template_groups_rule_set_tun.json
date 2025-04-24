@@ -87,6 +87,7 @@
       "type": "selector",
       "outbounds": [
         "direct",
+        "Proxy",
         "{all}"
       ]
     },
