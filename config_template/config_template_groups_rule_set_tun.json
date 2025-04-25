@@ -401,8 +401,22 @@
       "tag": "Global",
       "type": "urltest",
       "outbounds": [
-        "{all}"
-      ],
+             "HK",
+             "hk",
+             "香港",
+             "TW",
+             "tw",
+             "台湾",
+             "SG",
+             "sg",
+             "新加坡",
+             "JP",
+             "jp",
+             "日本",
+             "US",
+             "us",
+             "美国"
+           ],
       "filter": [
         {
           "action": "exclude",
