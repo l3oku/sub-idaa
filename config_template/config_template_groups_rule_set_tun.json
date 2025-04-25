@@ -228,7 +228,7 @@
       "default": "America"
     },
     {
-      "tag": "Meta",
+      "tag": "Games",
       "type": "selector",
       "outbounds": [
         "Proxy",
@@ -524,7 +524,7 @@
       },
       {
         "rule_set": ["geosite-category-games", "geosite-dmm"],
-        "outbound": "Proxy"
+        "outbound": "Games"
       },
       {
         "rule_set": ["geosite-hbo", "geosite-primevideo"],
