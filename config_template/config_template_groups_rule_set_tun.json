@@ -123,135 +123,149 @@
         "{all}"
       ]
     },
+     {
+      "tag": "AI",
+      "type": "selector",
+      "outbounds": [
+        "Proxy",
+        "🇭🇰 HK AUTO",
+        "🇨🇳 TW AUTO",
+        "🇸🇬 SG AUTO",
+        "🇯🇵 JP AUTO",
+        "🇰🇷 KR AUTO",
+        "🇺🇸 US AUTO",
+        "Global"
+      ],
+      "default": "🇺🇸 US AUTO"
+    },
+    {
+      "tag": "Google",
+      "type": "selector",
+      "outbounds": [
+        "🇭🇰 HK AUTO",
+        "🇨🇳 TW AUTO",
+        "🇸🇬 SG AUTO",
+        "🇯🇵 JP AUTO",
+        "🇰🇷 KR AUTO",
+        "🇺🇸 US AUTO",
+        "Proxy",
+        "Global"
+      ],
+      "default": "Proxy"
+    },
     {
       "tag": "Telegram",
       "type": "selector",
       "outbounds": [
         "Proxy",
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "Korea",
-        "America",
+        "🇭🇰 HK AUTO",
+        "🇨🇳 TW AUTO",
+        "🇸🇬 SG AUTO",
+        "🇯🇵 JP AUTO",
+        "🇰🇷 KR AUTO",
+        "🇺🇸 US AUTO",
         "Global"
-      ]
+      ],
+      "default": "🇸🇬 SG AUTO"
+    },
+    {
+      "tag": "Twitter",
+      "type": "selector",
+      "outbounds": [
+        "🇭🇰 HK AUTO",
+        "🇨🇳 TW AUTO",
+        "🇸🇬 SG AUTO",
+        "🇯🇵 JP AUTO",
+        "🇰🇷 KR AUTO",
+        "🇺🇸 US AUTO",
+        "Proxy",
+        "Global"
+      ],
+      "default": "Proxy"
+    },
+    {
+      "tag": "Emby",
+      "type": "selector",
+      "outbounds": [
+        "🇭🇰 HK AUTO",
+        "🇨🇳 TW AUTO",
+        "🇸🇬 SG AUTO",
+        "🇯🇵 JP AUTO",
+        "🇰🇷 KR AUTO",
+        "🇺🇸 US AUTO",
+        "Proxy",
+        "Global"
+      ],
+      "default": "Proxy"
     },
     {
       "tag": "Spotify",
       "type": "selector",
       "outbounds": [
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "Korea",
-        "America",
+        "🇭🇰 HK AUTO",
+        "🇨🇳 TW AUTO",
+        "🇸🇬 SG AUTO",
+        "🇯🇵 JP AUTO",
+        "🇰🇷 KR AUTO",
+        "🇺🇸 US AUTO",
         "Proxy",
         "Global"
       ],
-      "default": "HongKong"
+      "default": "Proxy"
     },
     {
       "tag": "Tiktok",
       "type": "selector",
       "outbounds": [
         "Proxy",
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "Korea",
-        "America",
-        "Global"
+        "🇭🇰 HK AUTO",
+        "🇨🇳 TW AUTO",
+        "🇸🇬 SG AUTO",
+        "🇯🇵 JP AUTO",
+        "🇰🇷 KR AUTO",
+        "🇺🇸 US AUTO"
       ],
-      "default": "Japan"
-    },
-    {
-      "tag": "Youtube",
-      "type": "selector",
-      "outbounds": [
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "Korea",
-        "America",
-        "Proxy",
-        "Global"
-      ],
-      "default": "Proxy"
-    },
-    {
-      "tag": "Twitter",
-      "type": "selector",
-      "outbounds": [
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "Korea",
-        "America",
-        "Proxy",
-        "Global"
-      ],
-      "default": "Proxy"
+      "default": "🇯🇵 JP AUTO"
     },
     {
       "tag": "Facebook",
       "type": "selector",
       "outbounds": [
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "Korea",
-        "America",
         "Proxy",
+        "🇭🇰 HK AUTO",
+        "🇨🇳 TW AUTO",
+        "🇸🇬 SG AUTO",
+        "🇯🇵 JP AUTO",
+        "🇰🇷 KR AUTO",
+        "🇺🇸 US AUTO",
         "Global"
-      ],
-      "default": "Proxy"
+      ]
     },
     {
-      "tag": "Chatgpt",
+      "tag": "Youtube",
       "type": "selector",
       "outbounds": [
         "Proxy",
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "Korea",
-        "America",
+        "🇭🇰 HK AUTO",
+        "🇨🇳 TW AUTO",
+        "🇸🇬 SG AUTO",
+        "🇯🇵 JP AUTO",
+        "🇰🇷 KR AUTO",
+        "🇺🇸 US AUTO",
         "Global"
-      ],
-      "default": "America"
+      ]
     },
     {
       "tag": "Games",
       "type": "selector",
       "outbounds": [
         "Proxy",
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "Korea",
-        "America",
-        "Global"
-      ]
-    },
-    {
-      "tag": "Google",
-      "type": "selector",
-      "outbounds": [
-        "Proxy",
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "Korea",
-        "America",
+        "🇭🇰 HK AUTO",
+        "🇨🇳 TW AUTO",
+        "🇸🇬 SG AUTO",
+        "🇯🇵 JP AUTO",
+        "🇰🇷 KR AUTO",
+        "🇺🇸 US AUTO",
         "Global"
       ]
     },
@@ -264,7 +278,7 @@
       ]
     },
     {
-      "tag": "HongKong",
+      "tag": "🇭🇰 HK AUTO",
       "type": "urltest",
       "outbounds": [
         "{all}"
@@ -287,7 +301,7 @@
       "tolerance": 50
     },
     {
-      "tag": "TaiWan",
+      "tag": "🇨🇳 TW AUTO",
       "type": "urltest",
       "outbounds": [
         "{all}"
@@ -309,7 +323,7 @@
       "tolerance": 50
     },
     {
-      "tag": "Singapore",
+      "tag": "🇸🇬 SG AUTO",
       "type": "urltest",
       "outbounds": [
         "{all}"
@@ -331,7 +345,7 @@
       "tolerance": 50
     },
     {
-      "tag": "Japan",
+      "tag": "🇯🇵 JP AUTO",
       "type": "urltest",
       "outbounds": [
         "{all}"
@@ -353,7 +367,7 @@
       "tolerance": 50
     },
     {
-      "tag": "Korea",
+      "tag": "🇰🇷 KR AUTO",
       "type": "urltest",
       "outbounds": [
         "{all}"
@@ -376,7 +390,7 @@
       "tolerance": 50
     },
     {
-      "tag": "America",
+      "tag": "🇺🇸 US AUTO",
       "type": "urltest",
       "outbounds": [
         "{all}"
@@ -487,7 +501,7 @@
       },
       {
         "rule_set": "geosite-openai",
-        "outbound": "Chatgpt"
+        "outbound": "AI"
       },
       {
         "rule_set": ["geosite-youtube", "geoip-google", "geosite-google", "geosite-github"],
@@ -522,7 +536,7 @@
         "outbound": "Tiktok"
       },
       {
-        "rule_set": ["geoip-netflix", "geosite-netflix"],
+        "rule_set": ["geoip-netflix", "geosite-netflix", "geosite-amazon"],
         "outbound": "Proxy"
       },
       {
@@ -530,7 +544,7 @@
         "outbound": "Proxy"
       },
       {
-        "rule_set": ["geoip-apple", "geosite-apple", "geosite-amazon"],
+        "rule_set": ["geoip-apple", "geosite-apple"],
         "outbound": "Proxy"
       },
       {
@@ -548,6 +562,10 @@
       {
         "rule_set": "geosite-geolocation-!cn",
         "outbound": "Global"
+      },
+      {
+        "rule_set": "geosite-emby",
+        "outbound": "Emby"
       },
       {
         "rule_set": ["geoip-cn", "geosite-cn"],
@@ -735,6 +753,13 @@
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/hbo.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geosite-emby",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/Emby.srs",
         "download_detour": "direct"
       },
       {
