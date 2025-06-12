@@ -563,7 +563,7 @@
       },
       {
         "rule_set": "geosite-geolocation-!cn",
-        "outbound": "🇺🇳 Global"
+        "outbound": "🌐 Global"
       },
       {
         "rule_set": "geosite-emby",
