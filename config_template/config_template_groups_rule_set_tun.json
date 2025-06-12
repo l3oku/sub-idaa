@@ -759,7 +759,7 @@
         "tag": "geosite-emby",
         "type": "remote",
         "format": "binary",
-        "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/Emby.srs",
+        "url": "https://gh.ikuu.eu.org/https://github.com/senshinya/singbox_ruleset/raw/refs/heads/main/rule/Emby/Emby.srs",
         "download_detour": "direct"
       },
       {
