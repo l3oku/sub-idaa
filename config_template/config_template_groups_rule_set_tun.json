@@ -134,7 +134,7 @@
         "🇯🇵 JP AUTO",
         "🇰🇷 KR AUTO",
         "🇺🇸 US AUTO",
-        "🇺🇳 Global"
+        "🌐 Global"
       ],
       "default": "🇺🇸 US AUTO"
     },
@@ -149,7 +149,7 @@
         "🇰🇷 KR AUTO",
         "🇺🇸 US AUTO",
         "Proxy",
-        "🇺🇳 Global"
+        "🌐 Global"
       ],
       "default": "Proxy"
     },
@@ -164,7 +164,7 @@
         "🇯🇵 JP AUTO",
         "🇰🇷 KR AUTO",
         "🇺🇸 US AUTO",
-        "🇺🇳 Global"
+        "🌐 Global"
       ],
       "default": "🇸🇬 SG AUTO"
     },
@@ -179,7 +179,7 @@
         "🇰🇷 KR AUTO",
         "🇺🇸 US AUTO",
         "Proxy",
-        "🇺🇳 Global"
+        "🌐 Global"
       ],
       "default": "Proxy"
     },
@@ -194,7 +194,7 @@
         "🇰🇷 KR AUTO",
         "🇺🇸 US AUTO",
         "Proxy",
-        "🇺🇳 Global"
+        "🌐 Global"
       ],
       "default": "Proxy"
     },
@@ -209,7 +209,7 @@
         "🇰🇷 KR AUTO",
         "🇺🇸 US AUTO",
         "Proxy",
-        "🇺🇳 Global"
+        "🌐 Global"
       ],
       "default": "Proxy"
     },
@@ -224,7 +224,7 @@
         "🇯🇵 JP AUTO",
         "🇰🇷 KR AUTO",
         "🇺🇸 US AUTO",
-        "🇺🇳 Global"
+        "🌐 Global"
       ],
       "default": "🇯🇵 JP AUTO"
     },
@@ -239,7 +239,7 @@
         "🇯🇵 JP AUTO",
         "🇰🇷 KR AUTO",
         "🇺🇸 US AUTO",
-        "🇺🇳 Global"
+        "🌐 Global"
       ]
     },
     {
@@ -253,7 +253,7 @@
         "🇯🇵 JP AUTO",
         "🇰🇷 KR AUTO",
         "🇺🇸 US AUTO",
-        "🇺🇳 Global"
+        "🌐 Global"
       ]
     },
     {
@@ -267,7 +267,7 @@
         "🇯🇵 JP AUTO",
         "🇰🇷 KR AUTO",
         "🇺🇸 US AUTO",
-        "🇺🇳 Global"
+        "🌐 Global"
       ]
     },
     {
@@ -413,7 +413,7 @@
       "tolerance": 50
     },
     {
-      "tag": "🇺🇳 Global",
+      "tag": "🌐 Global",
       "type": "selector",
       "outbounds": [
         "{all}"
@@ -431,6 +431,10 @@
             "SG",
             "sg",
             "新加坡",
+            "🇰🇷",
+            "KR",
+            "kr",
+            "韩国",
             "JP",
             "jp",
             "日本",
