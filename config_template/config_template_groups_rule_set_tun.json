@@ -134,7 +134,7 @@
         "🇯🇵 JP AUTO",
         "🇰🇷 KR AUTO",
         "🇺🇸 US AUTO",
-        "Global"
+        "🇺🇳 Global"
       ],
       "default": "🇺🇸 US AUTO"
     },
@@ -149,7 +149,7 @@
         "🇰🇷 KR AUTO",
         "🇺🇸 US AUTO",
         "Proxy",
-        "Global"
+        "🇺🇳 Global"
       ],
       "default": "Proxy"
     },
@@ -164,7 +164,7 @@
         "🇯🇵 JP AUTO",
         "🇰🇷 KR AUTO",
         "🇺🇸 US AUTO",
-        "Global"
+        "🇺🇳 Global"
       ],
       "default": "🇸🇬 SG AUTO"
     },
@@ -179,7 +179,7 @@
         "🇰🇷 KR AUTO",
         "🇺🇸 US AUTO",
         "Proxy",
-        "Global"
+        "🇺🇳 Global"
       ],
       "default": "Proxy"
     },
@@ -194,7 +194,7 @@
         "🇰🇷 KR AUTO",
         "🇺🇸 US AUTO",
         "Proxy",
-        "Global"
+        "🇺🇳 Global"
       ],
       "default": "Proxy"
     },
@@ -209,7 +209,7 @@
         "🇰🇷 KR AUTO",
         "🇺🇸 US AUTO",
         "Proxy",
-        "Global"
+        "🇺🇳 Global"
       ],
       "default": "Proxy"
     },
@@ -223,7 +223,8 @@
         "🇸🇬 SG AUTO",
         "🇯🇵 JP AUTO",
         "🇰🇷 KR AUTO",
-        "🇺🇸 US AUTO"
+        "🇺🇸 US AUTO",
+        "🇺🇳 Global"
       ],
       "default": "🇯🇵 JP AUTO"
     },
@@ -238,7 +239,7 @@
         "🇯🇵 JP AUTO",
         "🇰🇷 KR AUTO",
         "🇺🇸 US AUTO",
-        "Global"
+        "🇺🇳 Global"
       ]
     },
     {
@@ -252,7 +253,7 @@
         "🇯🇵 JP AUTO",
         "🇰🇷 KR AUTO",
         "🇺🇸 US AUTO",
-        "Global"
+        "🇺🇳 Global"
       ]
     },
     {
@@ -266,7 +267,7 @@
         "🇯🇵 JP AUTO",
         "🇰🇷 KR AUTO",
         "🇺🇸 US AUTO",
-        "Global"
+        "🇺🇳 Global"
       ]
     },
     {
@@ -412,8 +413,8 @@
       "tolerance": 50
     },
     {
-      "tag": "Global",
-      "type": "urltest",
+      "tag": "🇺🇳 Global",
+      "type": "selector",
       "outbounds": [
         "{all}"
       ],
@@ -421,27 +422,24 @@
         {
           "action": "exclude",
           "keywords": [
-             "HK",
-             "hk",
-             "香港",
-             "TW",
-             "tw",
-             "台湾",
-             "SG",
-             "sg",
-             "新加坡",
-             "JP",
-             "jp",
-             "日本",
-             "US",
-             "us",
-             "美国"
-           ]
+            "HK",
+            "hk",
+            "香港",
+            "TW",
+            "tw",
+            "台湾",
+            "SG",
+            "sg",
+            "新加坡",
+            "JP",
+            "jp",
+            "日本",
+            "US",
+            "us",
+            "美国"
+          ]
         }
-      ],
-      "url": "http://www.gstatic.com/generate_204",
-      "interval": "3m",
-      "tolerance": 50
+      ]
     }
   ],
   "route": {
@@ -561,7 +559,7 @@
       },
       {
         "rule_set": "geosite-geolocation-!cn",
-        "outbound": "Global"
+        "outbound": "🇺🇳 Global"
       },
       {
         "rule_set": "geosite-emby",
