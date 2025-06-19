@@ -422,7 +422,7 @@
     },
     {
       "tag": "🌐 Global",
-      "type": "selector",
+      "type": "urltest",
       "outbounds": [
         "{all}"
       ],
