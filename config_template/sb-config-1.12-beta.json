@@ -128,9 +128,8 @@
         "🇰🇷 KR AUTO",
         "🇺🇸 US AUTO",
         "🌐 Global"
-      ],
-      "default": "🇸🇬 SG AUTO"
-    },
+      ]
+     },
      {
       "tag": "AI",
       "type": "selector",
