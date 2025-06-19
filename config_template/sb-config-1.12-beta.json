@@ -129,8 +129,8 @@
         "🇺🇸 US AUTO",
         "🌐 Global"
       ]
-     },
-     {
+    },
+    {
       "tag": "AI",
       "type": "selector",
       "outbounds": [
