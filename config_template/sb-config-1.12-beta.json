@@ -120,7 +120,13 @@
       "tag": "Proxy",
       "type": "selector",
       "outbounds": [
-        "{all}"
+        "🇭🇰 HK AUTO",
+        "🇨🇳 TW AUTO",
+        "🇸🇬 SG AUTO",
+        "🇯🇵 JP AUTO",
+        "🇰🇷 KR AUTO",
+        "🇺🇸 US AUTO",
+        "🌐 Global"
       ]
     },
      {
