@@ -276,7 +276,8 @@
         "🇰🇷 KR AUTO",
         "🇺🇸 US AUTO",
         "🌐 Global"
-      ]
+      ],
+      "default": "🇯🇵 JP AUTO"
     },
     {
       "tag": "Games",
