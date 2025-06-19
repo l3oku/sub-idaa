@@ -265,6 +265,20 @@
       ]
     },
     {
+      "tag": "Line",
+      "type": "selector",
+      "outbounds": [
+        "Proxy",
+        "🇭🇰 HK AUTO",
+        "🇨🇳 TW AUTO",
+        "🇸🇬 SG AUTO",
+        "🇯🇵 JP AUTO",
+        "🇰🇷 KR AUTO",
+        "🇺🇸 US AUTO",
+        "🌐 Global"
+      ]
+    },
+    {
       "tag": "Games",
       "type": "selector",
       "outbounds": [
@@ -578,6 +592,10 @@
         "outbound": "Emby"
       },
       {
+        "rule_set": "geosite-line",
+        "outbound": "Line"
+      },
+      {
         "rule_set": ["geoip-cn", "geosite-cn"],
         "outbound": "China"
       }
@@ -770,6 +788,13 @@
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/Emby/Emby.srs",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geosite-line",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/line.srs",
         "download_detour": "direct"
       },
       {
