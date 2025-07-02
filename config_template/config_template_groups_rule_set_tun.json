@@ -265,7 +265,7 @@
       ]
     },
     {
-      "tag": "🟩 Line",
+      "tag": "🌵 Line",
       "type": "selector",
       "outbounds": [
         "🚀 Proxy",
@@ -593,7 +593,7 @@
       },
       {
         "rule_set": "geosite-line",
-        "outbound": "🟩 Line"
+        "outbound": "🌵 Line"
       },
       {
         "rule_set": ["geoip-cn", "geosite-cn"],
