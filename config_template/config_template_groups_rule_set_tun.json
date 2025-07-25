@@ -136,7 +136,6 @@
             "type": "selector",
             "interrupt_exist_connections": true,
             "outbounds": [
-                "Proxy",
                 "🇭🇰 香港自动",
                 "🇨🇳 台湾自动",
                 "🇸🇬 新加坡自动",
