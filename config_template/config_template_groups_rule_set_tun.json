@@ -163,7 +163,7 @@
             "default": "Proxy"
         },
         {
-            "tag": "🎵 TikTok",
+            "tag": "🎥 TikTok",
             "type": "selector",
             "interrupt_exist_connections": true,
             "outbounds": [
@@ -177,6 +177,22 @@
                 "🌐 全球自动"
             ],
             "default": "🇸🇬 新加坡自动"
+        },
+        {
+            "tag": "🎵 Spotify",
+            "type": "selector",
+            "interrupt_exist_connections": true,
+            "outbounds": [
+                "Proxy",
+                "🇭🇰 香港自动",
+                "🇨🇳 台湾自动",
+                "🇸🇬 新加坡自动",
+                "🇯🇵 日本自动",
+                "🇰🇷 韩国自动",
+                "🇺🇸 美国自动",
+                "🌐 全球自动"
+            ],
+            "default": "🇭🇰 香港自动"
         },
         {
             "tag": "📹 YouTube",
@@ -574,8 +590,12 @@
                 "outbound": "📹 YouTube"
             },
             {
+                "rule_set": "geosite-spotify",
+                "outbound": "🎵 Spotify"
+            },
+            {
                 "rule_set": "geosite-tiktok",
-                "outbound": "🎵 TikTok"
+                "outbound": "🎥 TikTok"
             },
             {
                 "rule_set": "geosite-line",
@@ -644,6 +664,13 @@
                 "type": "remote",
                 "format": "binary",
                 "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-!cn.srs",
+                "download_detour": "🎯 全球直连"
+            },
+            {
+                "tag": "geosite-spotify",
+                "type": "remote",
+                "format": "binary",
+                "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/spotify.srs",
                 "download_detour": "🎯 全球直连"
             },
             {
