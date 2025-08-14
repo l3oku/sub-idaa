@@ -127,8 +127,8 @@
             "type": "selector",
             "interrupt_exist_connections": true,
             "outbounds": [
-                "{all}",
-                "自动选择"
+                "自动选择",
+                "{all}"
             ],
             "default": "自动选择"
         },
