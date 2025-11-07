@@ -12,7 +12,7 @@
             "secret": "",
             "default_mode": "rule",
             "external_ui_download_url": "https://ghfast.top/https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip",
-            "external_ui_download_detour": "🎯 全球直连",
+            "external_ui_download_detour": "🎯 中国直连",
             "access_control_allow_origin": [
                 "http://127.0.0.1",
                 "http://localhost",
@@ -32,12 +32,12 @@
             {
                 "type": "local",
                 "tag": "local",
-                "detour": "🎯 全球直连"
+                "detour": "🎯 中国直连"
             },
             {
                 "type": "https",
                 "tag": "DIRECT-DNS",
-                "detour": "🎯 全球直连",
+                "detour": "🎯 中国直连",
                 "server_port": 443,
                 "server": "dns.alidns.com",
                 "domain_resolver": "local"
@@ -307,7 +307,7 @@
             "default": "Proxy"
         },
         {
-            "tag": "🎯 全球直连",
+            "tag": "🎯 中国直连",
             "type": "selector",
             "interrupt_exist_connections": true,
             "outbounds": [
@@ -323,7 +323,7 @@
             "interrupt_exist_connections": true,
             "outbounds": [
                 "🚫 拒绝连接",
-                "🎯 全球直连",
+                "🎯 中国直连",
                 "Proxy"
             ]
         },
@@ -333,7 +333,7 @@
             "interrupt_exist_connections": true,
             "outbounds": [
                 "🚫 拒绝连接",
-                "🎯 全球直连",
+                "🎯 中国直连",
                 "Proxy"
             ]
         },
@@ -343,7 +343,7 @@
             "interrupt_exist_connections": true,
             "outbounds": [
                 "🚫 拒绝连接",
-                "🎯 全球直连",
+                "🎯 中国直连",
                 "Proxy"
             ]
         },
@@ -532,17 +532,17 @@
             },
             {
                 "ip_is_private": true,
-                "outbound": "🎯 全球直连"
+                "outbound": "🎯 中国直连"
             },
             {
                 "clash_mode": "direct",
-                "outbound": "🎯 全球直连"
+                "outbound": "🎯 中国直连"
             },
             {
                 "domain": [
                     "cdn.jsdmirror.com"
                 ],
-                "outbound": "🎯 全球直连"
+                "outbound": "🎯 中国直连"
             },
             {
                 "rule_set": "geosite-category-ads-all",
@@ -649,7 +649,7 @@
                     "geosite-cn",
                     "geosite-private"
                 ],
-                "outbound": "🎯 全球直连"
+                "outbound": "🎯 中国直连"
             }
         ],
         "rule_set": [
@@ -658,147 +658,147 @@
                 "type": "remote",
                 "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/private.srs",
                 "format": "binary",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "🎯 中国直连"
             },
             {
                 "tag": "geosite-cn",
                 "type": "remote",
                 "url": "https://gh.ikuu.eu.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs",
                 "format": "binary",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "🎯 中国直连"
             },
             {
                 "tag": "geosite-category-ads-all",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ads-all.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "🎯 中国直连"
             },
             {
                 "tag": "geosite-ai",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-!cn.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "🎯 中国直连"
             },
             {
                 "tag": "geosite-spotify",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://ghfast.top/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/sing/geo/geosite/spotify.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "🎯 中国直连"
             },
             {
                 "tag": "geosite-youtube",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geosite/youtube.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "🎯 中国直连"
             },
             {
                 "tag": "geosite-google",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geosite/google.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "🎯 中国直连"
             },
             {
                 "tag": "geosite-telegram",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geosite/telegram.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "🎯 中国直连"
             },
             {
                 "tag": "geosite-tiktok",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geosite/tiktok.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "🎯 中国直连"
             },
             {
                 "tag": "geosite-line",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://ghfast.top/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/sing/geo/geosite/line.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "🎯 中国直连"
             },
             {
                 "tag": "geosite-netflix",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geosite/netflix.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "🎯 中国直连"
             },
             {
                 "tag": "geosite-apple",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geosite/apple.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "🎯 中国直连"
             },
             {
                 "tag": "geosite-microsoft",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geosite/microsoft.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "🎯 中国直连"
             },
             {
                 "tag": "geoip-private",
                 "type": "remote",
                 "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/private.srs",
                 "format": "binary",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "🎯 中国直连"
             },
             {
                 "tag": "geoip-google",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geoip/google.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "🎯 中国直连"
             },
             {
                 "tag": "geoip-telegram",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geoip/telegram.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "🎯 中国直连"
             },
             {
                 "tag": "geoip-netflix",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geoip/netflix.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "🎯 中国直连"
             },
             {
                 "tag": "geoip-apple",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geoip/apple.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "🎯 中国直连"
             },
             {
                 "tag": "geoip-cn",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geoip/cn.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "🎯 中国直连"
             },
             {
                 "tag": "STUN",
                 "type": "remote",
                 "url": "https://ghfast.top/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/STUN/STUN.srs",
                 "format": "binary",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "🎯 中国直连"
             },
             {
                 "tag": "BlockHttpDNS",
                 "type": "remote",
                 "url": "https://ghfast.top/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/BlockHttpDNS/BlockHttpDNS.srs",
                 "format": "binary",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "🎯 中国直连"
             }
         ]
     }
