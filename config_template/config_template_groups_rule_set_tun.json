@@ -608,7 +608,10 @@
             {
                 "rule_set": [
                     "geoip-google",
-                    "geosite-google"
+                    "geosite-google",
+                    "geosite-facebook",
+                    "geosite-instagram",
+                    "geosite-threads"
                 ],
                 "outbound": "🔍 Google"
             },
@@ -797,6 +800,27 @@
                 "type": "remote",
                 "format": "binary",
                 "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geoip/twitter.srs",
+                "download_detour": "🎯 中国直连"
+            },
+            {
+                "tag": "geosite-facebook",
+                "type": "remote",
+                "format": "binary",
+                "url": "https://ghfast.top/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/sing/geo/geosite/facebook.srs",
+                "download_detour": "🎯 中国直连"
+            },
+            {
+                "tag": "geosite-instagram",
+                "type": "remote",
+                "format": "binary",
+                "url": "https://ghfast.top/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/sing/geo/geosite/instagram.srs",
+                "download_detour": "🎯 中国直连"
+            },
+            {
+                "tag": "geosite-threads",
+                "type": "remote",
+                "format": "binary",
+                "url": "https://ghfast.top/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/sing/geo/geosite/threads.srs",
                 "download_detour": "🎯 中国直连"
             },
             {
