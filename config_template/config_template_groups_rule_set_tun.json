@@ -178,6 +178,22 @@
             "default": "Proxy"
         },
         {
+            "tag": "🐦 X",
+            "type": "selector",
+            "interrupt_exist_connections": true,
+            "outbounds": [
+                "Proxy",
+                "🇭🇰 香港自动",
+                "🇨🇳 台湾自动",
+                "🇸🇬 新加坡自动",
+                "🇯🇵 日本自动",
+                "🇰🇷 韩国自动",
+                "🇺🇸 美国自动",
+                "🌐 全球自动"
+            ],
+            "default": "Proxy"
+        },
+        {
             "tag": "🎥 TikTok",
             "type": "selector",
             "interrupt_exist_connections": true,
@@ -617,6 +633,10 @@
                 "outbound": "🌵 Line"
             },
             {
+                "rule_set": "geoip-twitter",
+                "outbound": "🐦 X"
+            },
+            {
                 "rule_set": [
                     "geoip-telegram",
                     "geosite-telegram"
@@ -770,6 +790,13 @@
                 "type": "remote",
                 "format": "binary",
                 "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geoip/netflix.srs",
+                "download_detour": "🎯 中国直连"
+            },
+            {
+                "tag": "geoip-twitter",
+                "type": "remote",
+                "format": "binary",
+                "url": "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geoip/twitter.srs",
                 "download_detour": "🎯 中国直连"
             },
             {
